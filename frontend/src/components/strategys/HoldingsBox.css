@@ -1,0 +1,42 @@
+/* Container and table styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .table {
+    border-collapse: collapse; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
+  }
+  
+  .thead-light th {
+    background-color: #ffffff; /* Light background for the header */
+    color: #333; 
+    padding: 12px 15px; /* Spacing within cells */
+    border-bottom: 2px solid #dee2e6; /* Bottom border for definition */
+  }
+  
+  /* Row and cell styling */
+  .table-hover tbody tr {
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #e9ecef; /* Light background on row hover */
+  }
+  
+  td {
+    padding: 12px 15px; /* Spacing within cells */
+    border-bottom: 1px solid #dee2e6; /* Subtle border for each row */
+  }
+  
+  /* Improve legibility and aesthetics */
+  td, th {
+    text-align: left; /* Align text to the left */
+    font-size: 16px; /* Slightly larger font size for readability */
+  }
+  

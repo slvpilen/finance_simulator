@@ -1,0 +1,13 @@
+indicators/AverageVolume.class
+indicators/SPX_PE_analyse.class
+indicators/utils/DateConverter.class
+indicators/RelativeStrengthIndex$1.class
+indicators/utils/TimeFrame.class
+indicators/RelativeStrengthIndex.class
+indicators/Regression.class
+indicators/utils/DateConverter$1.class
+indicators/PredictiveAverage.class
+indicators/BollingerBands.class
+indicators/StandardDeviation.class
+indicators/ROC.class
+indicators/MovingAverage.class

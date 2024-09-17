@@ -1,0 +1,11 @@
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/RelativeStrengthIndex.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/AverageVolume.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/Regression.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/MovingAverage.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/StandardDeviation.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/utils/DateConverter.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/BollingerBands.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/SPX_PE_analyse.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/ROC.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/utils/TimeFrame.java
+/home/oskar/Dokumenter/simulator/backend/indicators/src/main/java/indicators/PredictiveAverage.java

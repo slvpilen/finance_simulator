@@ -1,0 +1,15 @@
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/result/ResultService.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/LongPosition.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/Account.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/Analyser.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/result/ResultReadable.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/bases/StrategyBase.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/bases/StrategyRunnerBase.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/ClosedTrade.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/Position.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/bases/IndicatorBase.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/AnalyseListener.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/bases/Indicator.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/analyse/ShortPosition.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/result/ResultServiceIndicator.java
+/home/oskar/Dokumenter/simulator/backend/simulator/src/main/java/simulator/bases/IndicatorStockOnlyBase.java

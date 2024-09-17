@@ -1,0 +1,4 @@
+indicators/RelativeStrengthIndexTest.class
+indicators/RegressionTest.class
+indicators/utils/DateConverterTest.class
+indicators/StandardDeviationTest.class

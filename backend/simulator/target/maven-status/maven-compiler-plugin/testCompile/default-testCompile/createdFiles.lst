@@ -1,0 +1,10 @@
+simulator/bases/StrategyBaseTest.class
+simulator/bases/StrategyBaseDemoImpl.class
+simulator/analyse/AnalyserTest.class
+simulator/analyse/AccountTest2.class
+simulator/analyse/DummyStrategy.class
+simulator/analyse/AccountTest.class
+simulator/analyse/TestStrategy.class
+simulator/analyse/PositionTest2.class
+simulator/analyse/ResultServiceTest.class
+simulator/analyse/PositionTest.class

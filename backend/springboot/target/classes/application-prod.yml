@@ -1,0 +1,20 @@
+security:
+  jwt:
+    token:
+      secret-key: my-secret-prod-key
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/FinanceDB
+    username: postgres
+    password: replace-password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate # Use 'validate' or 'none' to prevent schema changes in production
+downloaddata:
+  daily-data-script-path: /home/oskar/simulator/downloadData/fetch_all_tick_daily.sh
+  preclose-data-script-path: /home/oskar/simulator/downloadData/fetch_preclose.sh
+  dividends-script-path: /home/oskar/simulator/downloadData/fetch_dividends.sh
+  folder-path: /home/oskar/simulator/downloadData

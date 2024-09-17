@@ -1,0 +1,62 @@
+package strategies.<PACKAGE>;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import lombok.Getter;
+import simulator.bases.StrategyBase;
+import simulator.bases.StrategyRunnerBase;
+import simulator.result.ResultReadable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+public class OptimizationFactory {
+
+    private final List<StrategyBase> strategies;
+    @Getter
+    private Map<ResultReadable, Settings> resultSettings = new HashMap<>();
+
+    public OptimizationFactory(List<StrategyBase> strategies) { this.strategies = strategies; }
+
+    /*
+     * Running multiple kombination of settings in parallel
+     */
+
+    public void optimize() {
+        List<Settings> settingsToTest = new Settings().generateSettingsToOptimize();
+        ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+
+        for (Settings settings : settingsToTest) {
+            executor.submit(() -> {
+                List<StrategyBase> strategiesCloned = new ArrayList<>();
+                strategies.forEach(strategy -> strategiesCloned.add(((<STRATEGY_FILENAME>) strategy).clone()));
+                strategiesCloned.forEach(strategy -> ((<STRATEGY_FILENAME>) strategy).setSettings(settings));
+
+                int START_DATE = -1; //TODO (example 20100102;)
+                StrategyRunnerBase strategyRunner = new StrategyRunner.StrategyRunnerBuilder().cash(100000)
+                        .startDate(START_DATE).endDate(StrategyRunner.END_DATE).strategys(strategiesCloned)
+                        .showProgress(false).build();
+
+                strategyRunner.runSimulation();
+                synchronized (resultSettings) {
+                    resultSettings.put(strategyRunner.getAnalyser().getResult(), settings);
+                }
+                System.out.println(settings);
+            });
+        }
+
+        executor.shutdown();
+        try {
+            if (!executor.awaitTermination(10, TimeUnit.HOURS)) {
+                executor.shutdownNow();
+            }
+        } catch (InterruptedException e) {
+            executor.shutdownNow();
+            Thread.currentThread().interrupt();
+        }
+    }
+
+}

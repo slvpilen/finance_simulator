@@ -1,0 +1,9 @@
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/ibkr/OrderBookImpl.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/connection/BrokerConnection.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/connection/Order.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/connection/OrderBook.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/adaptivePosition/TopOfBookPosition.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/connection/OrderBookAuthor.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/ibkr/IBKRConnection.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/ibkr/IBKRStock.java
+/home/oskar/Dokumenter/simulator/backend/broker/src/main/java/broker/connection/OrderBookListner.java

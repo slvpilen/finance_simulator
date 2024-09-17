@@ -1,0 +1,4 @@
+module simulatorUtils {
+
+    exports utils;
+}

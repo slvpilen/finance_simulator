@@ -1,0 +1,7 @@
+.analyse{ 
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    justify-content: center;
+}

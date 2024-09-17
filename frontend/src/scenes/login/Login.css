@@ -1,0 +1,21 @@
+/* styles.css */
+@keyframes wiggle {
+    0%, 100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+
+  }
+  
+  .wiggle {
+    animation: wiggle 0.3s ease-in-out;
+  }
+  

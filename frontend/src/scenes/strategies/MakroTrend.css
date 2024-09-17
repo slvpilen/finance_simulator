@@ -1,0 +1,31 @@
+.MakroTrend-container {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: rgb(241, 241, 241);
+}
+
+.linechart-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure charts can wrap to the next line as needed */  
+}
+
+/* Default to two items per row for larger screens */
+.linechart-container > div {
+  margin-bottom: 10px; /* Spacing between rows of charts */
+}
+
+.checkboxes { 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Ensure checkboxes can wrap to the next line as needed */
+  gap: 10px;
+  padding: 10px;
+  align-items: flex-start; /* Corrected from left to flex-start */
+}
+
+.simulations-multi-chart {
+  padding: 10px;
+}

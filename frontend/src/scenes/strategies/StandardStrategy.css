@@ -1,0 +1,53 @@
+.strategy-container {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: rgb(241, 241, 241);
+  }
+  
+  .linechart-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure charts can wrap to the next line as needed */  
+  }
+  
+  /* Default to two items per row for larger screens */
+  .linechart-container > div{
+    margin-bottom: 10px; /* Spacing between rows of charts */
+  }
+  
+  
+  .checkboxes{ 
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: left;
+  }
+  
+  .simulations-multi-chart{
+  padding: 10px;
+  }
+  
+  .header {
+    display: flex;
+    /*senter it both in height and width*/
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  
+  }
+  .refresh-button {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    width: 50px; /* Or the size you want */
+    height: 50px; /* Or the size you want, making it square */
+    padding: 0; /* Remove padding to let the icon fill the button */
+    background-color: transparent; /* Optional: makes the background transparent */
+    font-size: 40px; /* Adjust the size of the emoji/icon */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  }
+  
+  

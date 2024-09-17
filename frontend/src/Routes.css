@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+}
+
+.sidebar-content {
+  height: 100vh;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;  
+}
+
+.scene {
+  background-color: rgb(241, 241, 241);
+  width: 0;
+  flex-grow: 1;
+  padding: 4%;
+}
+
+
+

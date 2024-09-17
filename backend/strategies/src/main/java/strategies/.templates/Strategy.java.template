@@ -1,0 +1,114 @@
+package strategies.<PACKAGE>;
+
+import database.Symbol;
+import lombok.Setter;
+import simulator.bases.StrategyBase;
+
+public class <STRATEGY_FILENAME> extends StrategyBase {
+    public static final String STRATEGY_NAME = "<STRATEGY_NAME>";
+
+    @Setter
+    Settings settings = new Settings();
+
+
+    // TODO: Add indicators
+    // MovingAverage ma200;
+
+    public <STRATEGY_FILENAME>(Symbol symbol, double cash) {
+        super(symbol, cash);
+
+        LONG_ALLOWED = true;// TODO: Implement
+        SHORT_ALLOWED = false;// TODO: Implement
+        MINIMUM_DATA_REQUIRED = -1;// TODO: Implement
+
+        // ma200 = new MovingAverage(symbol, 200);
+        // addAnalyseListner(ma200);
+    }
+
+    // TODO: Implement
+    @Override
+    public boolean getLongSignal() {
+
+        //boolean edge = ;
+
+        //boolean okKlima = getClose() > ma200.getValue();
+
+        // boolean hasNoInnehav = getInnehav() == 0;
+        // boolean hasCashAvailable = getCash() > getBuyPrice();
+
+        // boolean isLongSignal = edge && hasNoInnehav && hasCashAvailable;
+
+        //return isLongSignal;
+        return false;
+    }
+
+    // TODO:Implement
+    @Override
+    public boolean getSellSignal() {
+
+        // boolean sellEdge = date > sellDate;
+
+        // boolean hasInnehav = getInnehav() > 0;
+        // boolean isSellSignal = hasInnehav && sellEdge;
+
+        // return isSellSignal;
+        return false;
+    }
+
+    @Override
+    public boolean getShortSignal() { return false; }
+
+    @Override
+    public boolean getCoverSignal() {
+
+        return false;
+    }
+
+    @Override
+    public int getSellAmount() {
+        int innehav = getInnehav();
+        if (innehav > 0) {
+            return innehav;
+        } else {
+            return (int) (getCash() / getBuyPrice());
+        }
+    }
+
+    @Override
+    public double getCurrentPrice() {
+        if (symbol.getClose(date) == 0)
+            throw new IllegalArgumentException("no current price:" + symbol + " date: " + date);
+
+        return super.getCurrentPrice();
+    }
+
+    @Override
+    public double getBuyPrice() {
+        double tradingFeePercent = 0.15;
+        return super.getBuyPrice() * (1 + tradingFeePercent / 100);
+    }
+
+    @Override
+    public double getSellPrice() {
+        double tradingFeePercent = 0.15;
+        return super.getBuyPrice() * (1 - tradingFeePercent / 100);
+    }
+
+    @Override
+    public double getShortPrice() {
+        double tradingFeePercent = 0.05;
+        return super.getBuyPrice() * (1 - tradingFeePercent / 100);
+    }
+
+    @Override
+    public double getCoverPrice() {
+        double tradingFeePercent = 0.05;
+        return super.getBuyPrice() * (1 + tradingFeePercent / 100);
+    }
+
+    @Override
+    public int getBuyAmount() {
+        return (int) (getCash() / getBuyPrice());
+    }
+
+}

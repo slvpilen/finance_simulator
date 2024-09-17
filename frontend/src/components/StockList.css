@@ -1,0 +1,65 @@
+/* StockList.css */
+.stock-list-container {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc; /* Adds a border around the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    border-radius: 8px; /* Optional: adds rounded corners to the container */
+    max-height: 420px;
+    overflow-y: auto;     /*add scrolling when overflow*/
+    align-items: left;
+  }
+  
+  .industry-header {
+    cursor: pointer;
+    border-radius: 5px;
+
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Set to the top of the viewport */
+    background-color: #fff; /* Ensure the text is readable against content below */
+    z-index: 2; /* Ensure the header is above other content */
+    padding: 15px;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.4); /* Optional: Adds a shadow for better separation */
+  }
+  h2{
+    text-align: center;
+  }
+  
+  h2{
+    text-align: center;
+  }
+
+  .industry-stocks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stock-item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .stock-item:last-child {
+    border-bottom: none;
+  }
+
+    .thead-light th {
+    background-color: #ffffff; /* Light background for the header */
+    color: #333; 
+    padding: 12px 15px; /* Spacing within cells */
+    border-bottom: 2px solid #dee2e6; /* Bottom border for definition */
+  }
+  .table-hover tbody tr {
+    position: relative; /* Add this line */
+    transition: background-color 0.3s ease;
+    z-index: 1; /* This will now take effect because of the position property */
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #e9ecef; /* Light background on row hover */
+  }

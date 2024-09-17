@@ -1,0 +1,37 @@
+package strategies.<PACKAGE>;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class Settings {
+    // private int RSILength = 5; // The length of relative strength index
+
+    // private boolean optiMode = false; // If true, the strategy will run in
+    // optimization mode
+
+    public List<Settings> generateSettingsToOptimize() {
+        List<Settings> settingsToOptimize = new ArrayList<>();
+
+        for (int rsiLength = 4; rsiLength < 15; rsiLength += 2) {
+            Settings settings = new Settings();
+            // settings.setRSILength(rsiLength);
+            // settings.setOptiMode(true);
+
+            settingsToOptimize.add(settings);
+        }
+
+        return settingsToOptimize;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Settings ["+"]";
+    }
+
+}

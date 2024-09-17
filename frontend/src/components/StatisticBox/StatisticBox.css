@@ -1,0 +1,16 @@
+.statistic-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.statistic-box h2 {
+    margin-bottom: 10px;
+}
+
+.statistic-box p {
+    margin: 5px 0;
+}
